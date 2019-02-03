@@ -9,6 +9,16 @@ import xsa from './pictures/xsa.gif'
 import scope from './pictures/scope.png'
 import './App.css';
 
+
+
+const divStyle= {
+  border:"2px dotted black",
+  display:"flex",
+  flexDirection:"column"
+}
+
+
+
 class App extends Component {
   constructor(){
     super()
@@ -42,13 +52,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div style={divStyle} className="App">
 
 <James projects={this.state.projects}/>
 <div>
 
 
 <Project webSiteName="Yoga Generator" image={chakras} url="https://mighty-wave-90208.herokuapp.com/"/>
+
 </div>
 
 <div>

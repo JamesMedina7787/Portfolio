@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
 
 
-
+const divStyle= {
+  flex:"3",
+  fontSize:"4em",
+  fontWeight:"bold",
+  textAlign: "center",
+  backgroundColor:"blue"
+}
 class James extends Component {
   render() {
     console.log()
     return (
-      <div className="James">
+      <div style={divStyle} className="James">
 James Wilfred Medina
       </div>
-      
+
     );
   }
 }
