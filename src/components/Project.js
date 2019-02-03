@@ -8,6 +8,8 @@ class Project extends Component {
       <div className="Project">
       <section>
        <label>{this.props.webSiteName}</label>
+       <a href={this.props.url} alt="James Medina JWM Porfolio">click
+        <img src={this.props.image}/></a>
        </section>
       </div>
     );

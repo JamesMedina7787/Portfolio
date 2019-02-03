@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import James from "./components/James"
 import Project from "./components/Project"
+import frank from './pictures/frank.jpg'
+import joke from './pictures/joke.png'
+import chakras from './pictures/chakras.jpg'
+import james from './pictures/james.gif'
+import xsa from './pictures/xsa.gif'
+import scope from './pictures/scope.png'
 import './App.css';
 
 class App extends Component {
@@ -42,28 +48,29 @@ class App extends Component {
 <div>
 
 
-<Project webSiteName="Yoga Generator"/>
+<Project webSiteName="Yoga Generator" image={chakras} url="https://mighty-wave-90208.herokuapp.com/"/>
 </div>
 
 <div>
 
-<Project webSiteName="Extreme Sports Aviation"/>
+<Project webSiteName="Extreme Sports Aviation" image={xsa} url="https://protected-shelf-29067.herokuapp.com/"/>
 </div>
 <div>
-<Project webSiteName="New York Code and Design Academy Class Projects"/>
-</div>
-
-<div>
-<Project webSiteName="Comedy Portfolio Page"/>
+<Project webSiteName="New York Code and Design Academy Class Projects" image={scope} url="https://salty-forest-43612.herokuapp.com/"/>
 </div>
 
 <div>
+<Project webSiteName="Comedy Portfolio Page" image={joke} url="https://desolate-meadow-81674.herokuapp.com/"/>
+</div>
 
-<Project webSiteName="Frank Dimodica Art"/>
+<div>
+
+<Project webSiteName="Frank Dimodica Art" image={frank} url="http://frankdimodicaart.com/"/>
+
 </div>
 <div>
 
-<Project webSiteName="Inside Outside Improvements"/>
+<Project webSiteName="Inside Outside Improvements" image={james} url="http://insideoutsideimprovements.com/"/>
 </div>
 
       </div>
