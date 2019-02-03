@@ -6,6 +6,7 @@ const divStyle= {
   fontSize:"4em",
   fontWeight:"bold",
   textAlign: "center",
+  color:"orange",
   backgroundColor:"blue"
 }
 class James extends Component {
