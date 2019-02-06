@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-
-
 const divStyle= {
   flex:"3",
   fontSize:"4em",
@@ -14,7 +12,7 @@ class James extends Component {
     console.log()
     return (
       <div style={divStyle} className="James">
-James Wilfred Medina
+           James Wilfred Medina
       </div>
 
     );

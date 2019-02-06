@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import James from "./components/James"
 import Project from "./components/Project"
 import frank from './pictures/frank.jpg'
 import joke from './pictures/joke.png'
@@ -7,6 +6,16 @@ import chakras from './pictures/chakras.jpg'
 import james from './pictures/james.gif'
 import xsa from './pictures/xsa.gif'
 import scope from './pictures/scope.png'
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import Error from "./components/Error"
+import Navigation from "./components/Navigation"
+import Home from "./components/Home"
+import February2 from "./components/February2"
+import February3 from "./components/February3"
+import James from "./components/James"
+import {Link} from "react-router-dom";
+import Routes from "./components/Routes"
+import {NavLink} from 'react-router-dom'
 import './App.css';
 
 
@@ -54,9 +63,9 @@ class App extends Component {
     return (
       <div style={divStyle} className="App">
 
-<James projects={this.state.projects}/>
-<div>
 
+<James />
+<div>
 
 <Project webSiteName="Yoga Generator" image={chakras} url="https://mighty-wave-90208.herokuapp.com/"/>
 
@@ -83,6 +92,21 @@ class App extends Component {
 
 <Project webSiteName="Inside Outside Improvements" image={james} url="http://insideoutsideimprovements.com/"/>
 </div>
+
+<BrowserRouter>
+    <div>
+     <Navigation />
+        <Switch>
+            <Route path="/" component={Home} exact></Route>
+        <Route path="/February2" component={February2}></Route>
+          <Route path="/February3" component={February3}></Route>
+<Route component={Error}></Route>
+
+
+
+        </Switch>
+    </div>
+</BrowserRouter>
 
       </div>
     );

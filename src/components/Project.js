@@ -32,7 +32,12 @@ class Project extends Component {
       <section style={sectionStyle}>
        <label style={labelStyle}>{this.props.webSiteName}</label><br/>
        <a style={linkStyle} href={this.props.url} alt="James Medina JWM Porfolio">
-        <img style={imgStyle} src={this.props.image}/></a>
+        <img style={imgStyle} src={this.props.image}/><br/>
+         {this.props.url}<br />
+<p>Click the above Picture, or web address, to visit the corresponding JWM website</p>
+           <br/>
+        </a>
+
        </section>
       </div>
     );
