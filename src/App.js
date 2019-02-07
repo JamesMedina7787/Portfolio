@@ -12,6 +12,7 @@ import Navigation from "./components/Navigation"
 import Home from "./components/Home"
 import February2 from "./components/February2"
 import February3 from "./components/February3"
+import February7 from "./components/February7"
 import James from "./components/James"
 import {Link} from "react-router-dom";
 import Routes from "./components/Routes"
@@ -99,7 +100,8 @@ class App extends Component {
         <Switch>
             <Route path="/" component={Home} exact></Route>
         <Route path="/February2" component={February2}></Route>
-          <Route path="/February3" component={February3}></Route>
+        <Route path="/February3" component={February3}></Route>
+        <Route path="/February7" component={February7}></Route>
 <Route component={Error}></Route>
 
 

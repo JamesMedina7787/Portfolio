@@ -8,6 +8,7 @@ class Navigation extends Component {
       <div className="Navigation">
     <NavLink to="/February2">February2nd 2019 - My Start</NavLink><br/>
     <NavLink to="/February3">February3rd 2019 - Coding Boot Camp</NavLink>
+      <br/>  <NavLink to="/February7">February7th 2019 - Graduation</NavLink>
       </div>
     );
   }
