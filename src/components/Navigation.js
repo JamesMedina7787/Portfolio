@@ -1,14 +1,35 @@
 import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom'
 
+const blogs={
+  display: 'flex',
+  fontFamily:'cornerstone',
+  fontWeight:'bold',
+  fontSize:'1.47em',
+  flexWrap:"wrap",
+  justifyContent:'spaceBetween',
+  alignItems: 'center',
+  flexDirection:"column",
+  textAlign:'center',
+  margin: '19px'
+}
+
+const menuItem={
+  backgroundColor:'yellow',
+  border: '3px solid black',
+  padding: '9px',
+  margin: '1.67px',
+  textDecoration: 'none',
+  flex: 1
+}
 class Navigation extends Component {
   render() {
     console.log()
     return (
-      <div className="Navigation">
-    <NavLink to="/February2">February2nd 2019 - My Start</NavLink><br/>
-    <NavLink to="/February3">February3rd 2019 - Coding Boot Camp</NavLink>
-      <br/>  <NavLink to="/February7">February7th 2019 - Graduation</NavLink>
+      <div className="Navigation" style={blogs}>
+    <NavLink style={menuItem}  to="/February2">February2nd 2019 - My Start</NavLink><br/>
+    <NavLink style={menuItem} to="/February3">February3rd 2019 - Coding Boot Camp</NavLink> <br/>
+    <NavLink style={menuItem} to="/February7">February7th 2019 - Graduation</NavLink>
       </div>
     );
   }

@@ -24,14 +24,44 @@ import './App.css';
 const divStyle= {
   border:"2px dotted black",
   display:"flex",
-  flexDirection:"column"
+  flexWrap:"wrap",
+  backgroundColor: '#331e05',
+  justifyContent:'spaceBetween',
+  alignItems: 'center',
+  flexDirection:"row",
+  fontFamily: 'bazooka',
+  border:"2px dotted beige"
 }
+const divStyle2= {
+  flex:"1",
+  border:"2px dotted beige",
+  maxWidth:'425px',
+  padding: "3px",
+  margin: '10px'
 
+}
+const blogStyle= {
+  display: 'flex',
+  border:"2px dotted beige",
+  color:'#331e05',
+  backgroundColor: 'beige',
+  padding: "3px",
+  margin: '10px'
+}
+const blogContent= {
+  flex:'3',
+  border:"2px dotted beige",
+  color:'#331e05',
+  backgroundColor: 'beige',
+  padding: "3px",
+  margin: '10px'
+}
 
 
 class App extends Component {
   constructor(){
     super()
+
     this.state = {
       projects: [
         {
@@ -42,6 +72,8 @@ class App extends Component {
               title:'Extreme Sports Aviation',
               url:"https://protected-shelf-29067.herokuapp.com/"
             },
+            {  title: 'Inside Outside Improvements',
+                   url:'http://insideoutsideimprovements.com/'},
         {
         title: 'New York Code and Design Academy Class projects',
         url: "https://salty-forest-43612.herokuapp.com/"
@@ -54,46 +86,49 @@ class App extends Component {
         title:'Frank Dimodica Art',
         url:"http://www.frankdimodicaart.com/"
       },
-   {  title: 'Inside Outside Improvements',
-          url:'http://insideoutsideimprovements.com/'}
+
       ]
     }
   }
 
   render() {
     return (
-      <div style={divStyle} className="App">
+      <div className="App">
 
 
 <James />
-<div>
+<div style={divStyle} style={divStyle} className="App">
 
-<Project webSiteName="Yoga Generator" image={chakras} url="https://mighty-wave-90208.herokuapp.com/"/>
-
-</div>
-
-<div>
-
-<Project webSiteName="Extreme Sports Aviation" image={xsa} url="https://protected-shelf-29067.herokuapp.com/"/>
-</div>
-<div>
+<div style={divStyle2}>
 <Project webSiteName="New York Code and Design Academy Class Projects" image={scope} url="https://salty-forest-43612.herokuapp.com/"/>
 </div>
+<div style={divStyle2}>
 
-<div>
+<Project webSiteName="Yoga Class Generator" image={chakras} url="https://mighty-wave-90208.herokuapp.com/"/>
+
+</div>
+<div style={divStyle2}>
 <Project webSiteName="Comedy Portfolio Page" image={joke} url="https://desolate-meadow-81674.herokuapp.com/"/>
 </div>
-
-<div>
-
-<Project webSiteName="Frank Dimodica Art" image={frank} url="http://frankdimodicaart.com/"/>
-
 </div>
-<div>
+<div style={divStyle}>
+<div style={divStyle2}>
 
 <Project webSiteName="Inside Outside Improvements" image={james} url="http://insideoutsideimprovements.com/"/>
 </div>
 
+
+<div style={divStyle2}>
+
+<Project webSiteName="Extreme Sports Aviation" image={xsa} url="https://protected-shelf-29067.herokuapp.com/"/>
+</div>
+<div style={divStyle2}>
+
+<Project webSiteName="Frank Dimodica Art" image={frank} url="http://frankdimodicaart.com/"/>
+
+</div>
+</div>
+<div style={blogStyle}>
 <BrowserRouter>
     <div>
      <Navigation />
@@ -103,13 +138,10 @@ class App extends Component {
         <Route path="/February3" component={February3}></Route>
         <Route path="/February7" component={February7}></Route>
 <Route component={Error}></Route>
-
-
-
         </Switch>
     </div>
 </BrowserRouter>
-
+</div>
       </div>
     );
   }

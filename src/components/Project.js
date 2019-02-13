@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
 
 const sectionStyle= {
-  flex:"1",
   backgroundColor:"oldlace"
 }
 const labelStyle= {
-  flex:"1",
   fontSize:"2em",
   fontWeight:"bold"
 }
 const imgStyle= {
-  flex:"1",
   backgroundColor:"oldlace",
-  width:"80%"
+  width:'100%'
 }
-const divStyle= {
-  flex:"1",
-  border:"2px dotted black"
-}
+
 const linkStyle= {
-  flex:"1",
   backgroundColor:"oldlace"
+}
+
+const added= {
+  color:'#331e05',
+  fontFamily: 'technical',
+  fontStretch: 'expanded',
+  fontSize: '1.1em'
 }
 
 
@@ -28,13 +28,13 @@ class Project extends Component {
 
   render() {
     return (
-      <div style={divStyle} className="Project">
+      <div className="Project">
       <section style={sectionStyle}>
        <label style={labelStyle}>{this.props.webSiteName}</label><br/>
        <a style={linkStyle} href={this.props.url} alt="James Medina JWM Porfolio">
         <img style={imgStyle} src={this.props.image}/><br/>
          {this.props.url}<br />
-<p>Click the above Picture, or web address, to visit the corresponding JWM website</p>
+<p style={added}>Click the above Picture, or web address, to visit the corresponding JWM website</p>
            <br/>
         </a>
 

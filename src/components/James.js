@@ -4,8 +4,9 @@ const divStyle= {
   fontSize:"4em",
   fontWeight:"bold",
   textAlign: "center",
-  color:"orange",
-  backgroundColor:"blue"
+  color:"beige",
+  backgroundColor:"skyblue",
+  textShadow: '3px 3px #d2d7dd'
 }
 class James extends Component {
   render() {
