@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-
+// import surf from './pictures/surf.jpg'
 const blogContent= {
   flex:'3',
   border:"2px dotted black",
   padding: "10px",
   margin: '30px',
   fontSize: '1.38em'
+}
+const imgStyle= {
+  width:'100%'
 }
 class February7 extends Component {
   render() {

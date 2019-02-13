@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+// import nyscda from './pictures/nyscda.jpg'
 const blogContent= {
   flex:'3',
   border:"2px dotted black",
@@ -7,11 +7,14 @@ const blogContent= {
   margin: '30px',
   fontSize: '1.38em'
 }
+const imgStyle= {
+  width:'100%'
+}
 class February3 extends Component {
   render() {
     console.log()
     return (
-      <div style ={blogContent}className="February3">
+      <div style ={blogContent} className="February3">
       <p>`
 I hit a road block in my coding career. I had two freelance projects under my belt, but I wasn’t making nearly as much money as I needed to support my life. I learned many different programming languages, but I still was dependant on a CMS. Despite everything I knew, going about getting a job was a totally different venture. I needed job training. I did some research, and found a very interesting option; “Coding Boot Camp”.
 <br/><br/>
