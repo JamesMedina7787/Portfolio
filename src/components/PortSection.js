@@ -8,9 +8,10 @@ const divStyle= {
   backgroundColor:"skyblue",
   textShadow: '3px 3px #d2d7dd',
   border: '3px solid black',
-  width:'100%'
+  width:'100%',
 }
 const h2Style={
+  flex:'3',
   textAlign:'center'
 }
 class PortSection extends Component {

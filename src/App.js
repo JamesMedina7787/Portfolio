@@ -28,7 +28,14 @@ import nyscda from './pictures/download.png'
 import Scroll from 'react-scrollable-anchor'
 import './App.css';
 
-
+const siteDescription= {
+  flex:'3',
+  border:"2px dotted silver",
+  padding: "10px",
+  margin: '30px',
+  fontSize: '2.38em',
+  color:'lightblue'
+}
 
 const divStyle= {
   border:"2px dotted black",
@@ -71,7 +78,8 @@ const blogStyle= {
   margin: '10px',
   alignItems: 'center',
   flexDirection:"row",
-  id:"Blog"
+  id:"Blog",
+  textAlign:'center'
 }
 const blogContent= {
   flex:'3',
@@ -83,6 +91,9 @@ const blogContent= {
   textAlign:'center',
   alignItems:'center',
   blog: 'Blogs about my web developement career'
+}
+const blogMenu={
+  flex:'1'
 }
 const heading={
   flex:'3',
@@ -163,15 +174,13 @@ class App extends Component {
 <Project webSiteName="Yoga Class Generator" image={chakras} url="https://mighty-wave-90208.herokuapp.com/"/>
 
 </div>
-<div style={divStyle2}>
-<Project webSiteName="Comedy Portfolio Page" image={joke} url="https://desolate-meadow-81674.herokuapp.com/"/>
-</div>
+
 </div>
 
 
 <Scroll id={freeLance.link}>
 <div style={divStyle} >
-<PortSection sectionName="Freelance Work Experience"/>
+<PortSection style={divStyle2} sectionName="Freelance Work Experience"/>
 
 <div style={divStyle2}>
 <Project webSiteName="Inside Outside Improvements" image={james} url="http://insideoutsideimprovements.com/"/>
@@ -179,6 +188,7 @@ class App extends Component {
 
 
 <div style={divStyle2}>
+<p style={siteDescription}>Brand New</p>
 <Project webSiteName="Extreme Sports Aviation" image={xsa} url="https://protected-shelf-29067.herokuapp.com/"/>
 </div>
 
@@ -189,16 +199,16 @@ class App extends Component {
 
 </div>
 </Scroll>
-<div style={blogStyle} >
-<Scroll id={blogContent.blog}>
-<BrowserRouter>
-    <div>
-     <Navigation />
-        <Switch>
-            <Route path="/" component={Home} exact></Route>
-        <Route path="/February2" component={February2}></Route>
-        <Route path="/February3" component={February3}></Route>
-        <Route path="/February7" component={February7}></Route>
+<div  >
+<Scroll  id={blogContent.blog}>
+<BrowserRouter >
+    <div style={blogMenu}>
+     <Navigation  />
+        <Switch >
+            <Route  path="/" component={Home} exact></Route>
+        <Route  path="/February2" component={February2}></Route>
+        <Route  path="/February3" component={February3}></Route>
+        <Route  path="/February7" component={February7}></Route>
 <Route component={Error}></Route>
         </Switch>
     </div>
