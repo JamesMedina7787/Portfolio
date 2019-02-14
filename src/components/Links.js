@@ -1,25 +1,32 @@
 import React, { Component } from 'react';
 const divStyle= {
   flex:'1',
-  fontSize:"1em",
+  fontSize:".6em",
   fontWeight:"bold",
   textAlign: "center",
-  textShadow: '3px 3px #d2d7dd',
+  textShadow: '3px 3px grey',
+color:'white'
 }
 const sectionStyle= {
   backgroundColor:"oldlace"
 }
 const labelStyle= {
+  flex:'1',
   fontSize:"2em",
-  fontWeight:"bold"
+  fontWeight:"bold",
+  maxWidth: '200px'
 }
 const imgStyle= {
   width:'100%',
-    maxWidth:'100px'
+    maxWidth:'100px',
+    color: 'white',
+
 }
 
 const linkStyle= {
-
+  flex:'1',
+  maxWidth: '200px',
+  color:'white'
 }
 
 const added= {

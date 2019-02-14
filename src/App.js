@@ -7,6 +7,7 @@ import james from './pictures/james.gif'
 import xsa from './pictures/xsa.gif'
 import linked from './pictures/in.png'
 import git from './pictures/octocat_fluid.png'
+import start from './pictures/start.jpg'
 import scope from './pictures/scope.png'
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import Error from "./components/Error"
@@ -15,12 +16,15 @@ import Home from "./components/Home"
 import February2 from "./components/February2"
 import February3 from "./components/February3"
 import February7 from "./components/February7"
+import AboutMe from "./components/AboutMe"
+import Education from "./components/Education"
 import PortSection from "./components/PortSection"
 import James from "./components/James"
 import {Link} from "react-router-dom";
 import Routes from "./components/Routes"
 import Links from "./components/Links"
 import {NavLink} from 'react-router-dom'
+import nyscda from './pictures/download.png'
 import './App.css';
 
 
@@ -77,7 +81,16 @@ const blogContent= {
   textAlign:'center',
   alignItems:'center',
 }
-
+const heading={
+  flex:'3',
+  width: '100%'
+}
+const freeLance = {
+  msg:'I have run my own business selling websites. I have been developing for clients a few years now. I get paid by consultation. They index very well on the google search engine.'
+}
+const bootCamp = {
+  msg: 'I am fluent in Javascript, HTML, CSS, JQuery, SQL, PHP, Node.JS, React, and GitHub. I deploy my sites with Heroku. I have experience writing Java. I am patient, understanding, logical, and level headed.'
+}
 
 class App extends Component {
   constructor(){
@@ -126,10 +139,21 @@ class App extends Component {
 
 <Links webSiteName="LinkedIn" image={linked} url="https://www.linkedin.com/in/james-medina-766170161/"/>
 </div>
-<PortSection sectionName="NYCDA Projects"/>
+<AboutMe message={bootCamp.msg}/>
+<PortSection style={divStyle2} sectionName="Full Stack Developer"/>
+<div style={linkDivStyle}>
+<Links webSiteName="G-Mail - JamesWilfredMedina@gmail.com" image={start} url=""/><br/>
+<Links webSiteName="New York Code + Design Academy" image={nyscda} url=""/>
+</div>
+<AboutMe message={freeLance.msg}/>
+
+
+<PortSection sectionName="New York Code + Design Projects"/>
+
 <div style={divStyle2}>
 <Project webSiteName="New York Code and Design Academy Class Projects" image={scope} url="https://salty-forest-43612.herokuapp.com/"/>
 </div>
+
 <div style={divStyle2}>
 
 <Project webSiteName="Yoga Class Generator" image={chakras} url="https://mighty-wave-90208.herokuapp.com/"/>
@@ -140,8 +164,19 @@ class App extends Component {
 </div>
 </div>
 
+
+
 <div style={divStyle}>
-<PortSection style={divStyle2} sectionName="Freelance Work"/>
+
+
+
+
+
+
+
+
+<PortSection sectionName="Freelance Work Experience"/>
+
 <div style={divStyle2}>
 <Project webSiteName="Inside Outside Improvements" image={james} url="http://insideoutsideimprovements.com/"/>
 </div>
