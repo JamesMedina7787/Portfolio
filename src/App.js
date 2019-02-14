@@ -9,7 +9,7 @@ import linked from './pictures/in.png'
 import git from './pictures/octocat_fluid.png'
 import start from './pictures/start.jpg'
 import scope from './pictures/scope.png'
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {BrowserRouter, Route, Switch, browserHistory} from "react-router-dom";
 import Error from "./components/Error"
 import Navigation from "./components/Navigation"
 import Home from "./components/Home"
@@ -25,6 +25,7 @@ import Routes from "./components/Routes"
 import Links from "./components/Links"
 import {NavLink} from 'react-router-dom'
 import nyscda from './pictures/download.png'
+import Scroll from 'react-scrollable-anchor'
 import './App.css';
 
 
@@ -70,6 +71,7 @@ const blogStyle= {
   margin: '10px',
   alignItems: 'center',
   flexDirection:"row",
+  id:"Blog"
 }
 const blogContent= {
   flex:'3',
@@ -80,13 +82,15 @@ const blogContent= {
   margin: '10px',
   textAlign:'center',
   alignItems:'center',
+  blog: 'Blogs about my web developement career'
 }
 const heading={
   flex:'3',
   width: '100%'
 }
 const freeLance = {
-  msg:'I have run my own business selling websites. I have been developing for clients a few years now. I get paid by consultation. They index very well on the google search engine.'
+  msg:'I have run my own business selling websites. I have been developing for clients a few years now. I get paid by consultation. They index very well on the google search engine.',
+  link: 'Freelance Web Pages'
 }
 const bootCamp = {
   msg: 'I am fluent in Javascript, HTML, CSS, JQuery, SQL, PHP, Node.JS, React, and GitHub. I deploy my sites with Heroku. I have experience writing Java. I am patient, understanding, logical, and level headed.'
@@ -142,8 +146,8 @@ class App extends Component {
 <AboutMe message={bootCamp.msg}/>
 <PortSection style={divStyle2} sectionName="Full Stack Developer"/>
 <div style={linkDivStyle}>
-<Links webSiteName="G-Mail - JamesWilfredMedina@gmail.com" image={start} url=""/><br/>
-<Links webSiteName="New York Code + Design Academy" image={nyscda} url=""/>
+<Links webSiteName="Blog" image={start} url="#Blogs about my web developement career"/><br/>
+<Links webSiteName="Freelance" image={nyscda} url="#Freelance Web Pages"/>
 </div>
 <AboutMe message={freeLance.msg}/>
 
@@ -165,16 +169,8 @@ class App extends Component {
 </div>
 
 
-
-<div style={divStyle}>
-
-
-
-
-
-
-
-
+<Scroll id={freeLance.link}>
+<div style={divStyle} >
 <PortSection sectionName="Freelance Work Experience"/>
 
 <div style={divStyle2}>
@@ -192,7 +188,9 @@ class App extends Component {
 </div>
 
 </div>
-<div style={blogStyle}>
+</Scroll>
+<div style={blogStyle} >
+<Scroll id={blogContent.blog}>
 <BrowserRouter>
     <div>
      <Navigation />
@@ -205,6 +203,7 @@ class App extends Component {
         </Switch>
     </div>
 </BrowserRouter>
+</Scroll>
 </div>
       </div>
     );

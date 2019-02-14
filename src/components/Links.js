@@ -43,7 +43,7 @@ class Links extends Component {
       <div style={divStyle} className="Links">
 
       <label style={labelStyle}>{this.props.webSiteName}</label><br/>
-      <a style={linkStyle} href={this.props.url} alt="James Medina Links">
+      <a style={linkStyle} href={this.props.url} href={this.props.url} alt="James Medina Links">
        <img style={imgStyle} src={this.props.image}/><br/>
         {this.props.url}<br />
 </a>
