@@ -29,7 +29,8 @@ class Navigation extends Component {
       <div className="Navigation" style={blogs}>
     <NavLink style={menuItem}  to="/February2">February2nd 2019 - My Start</NavLink><br/>
     <NavLink style={menuItem} to="/February3">February3rd 2019 - Coding Boot Camp</NavLink> <br/>
-    <NavLink style={menuItem} to="/February7">February7th 2019 - Graduation</NavLink>
+    <NavLink style={menuItem} to="/February7">February7th 2019 - Graduation</NavLink><br/>
+    <NavLink style={menuItem} to="/February20">February20th 2019 - Florida Vacation</NavLink>
       </div>
     );
   }

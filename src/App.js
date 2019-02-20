@@ -16,6 +16,7 @@ import Home from "./components/Home"
 import February2 from "./components/February2"
 import February3 from "./components/February3"
 import February7 from "./components/February7"
+import February20 from "./components/February20"
 import AboutMe from "./components/AboutMe"
 import Education from "./components/Education"
 import PortSection from "./components/PortSection"
@@ -93,7 +94,8 @@ const blogContent= {
   blog: 'Blogs about my web developement career'
 }
 const blogMenu={
-  flex:'1'
+  whiteSpace:'pre-wrap',
+  textAlign:'left'
 }
 const heading={
   flex:'3',
@@ -209,6 +211,7 @@ class App extends Component {
         <Route  path="/February2" component={February2}></Route>
         <Route  path="/February3" component={February3}></Route>
         <Route  path="/February7" component={February7}></Route>
+        <Route  path="/February20" component={February20}></Route>
 <Route component={Error}></Route>
         </Switch>
     </div>
