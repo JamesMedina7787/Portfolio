@@ -17,6 +17,7 @@ import February2 from "./components/February2"
 import February3 from "./components/February3"
 import February7 from "./components/February7"
 import February20 from "./components/February20"
+import March2 from "./components/March2"
 import AboutMe from "./components/AboutMe"
 import Education from "./components/Education"
 import PortSection from "./components/PortSection"
@@ -212,6 +213,7 @@ class App extends Component {
         <Route  path="/February3" component={February3}></Route>
         <Route  path="/February7" component={February7}></Route>
         <Route  path="/February20" component={February20}></Route>
+        <Route  path="/March2" component={March2}></Route>
 <Route component={Error}></Route>
         </Switch>
     </div>
