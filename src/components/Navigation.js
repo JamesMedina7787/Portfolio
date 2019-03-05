@@ -16,11 +16,14 @@ const blogs={
 
 const menuItem={
   backgroundColor:'yellow',
-  border: '3px solid black',
+  border: 'thick groove',
+  borderColor:'purple maroon',
+  borderBottom:'double purple thick',
+  borderRadius : '7ch/3ch',
   padding: '9px',
   margin: '1.67px',
   textDecoration: 'none',
-  flex: 1
+  flex:1
 }
 class Navigation extends Component {
   render() {
