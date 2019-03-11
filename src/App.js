@@ -6,6 +6,7 @@ import chakras from './pictures/chakras.jpg'
 import james from './pictures/james.gif'
 import xsa from './pictures/xsa.gif'
 import linked from './pictures/in.png'
+import blue from './pictures/frost.jpg'
 import git from './pictures/octocat_fluid.png'
 import start from './pictures/start.jpg'
 import scope from './pictures/scope.png'
@@ -38,7 +39,15 @@ const siteDescription= {
   fontSize: '2.38em',
   color:'lightblue'
 }
-
+const blogContents= {
+  flex:'3',
+  border:"2px solid blue",
+  borderImage:`url(${blue}) 50 fill/ 20px /10px round`,
+  padding: "10px",
+  margin: '30px',
+  fontSize: '1.38em',
+  color:'lightblue'
+}
 const divStyle= {
   border:"2px dotted black",
   display:"flex",
@@ -156,15 +165,18 @@ class App extends Component {
 
 
 <Links webSiteName="LinkedIn" image={linked} url="https://www.linkedin.com/in/james-medina-766170161/"/>
+</div >
+<div style={blogContents}>
+<AboutMe  message={bootCamp.msg}/>
 </div>
-<AboutMe message={bootCamp.msg}/>
 <PortSection style={divStyle2} sectionName="Full Stack Developer"/>
 <div style={linkDivStyle}>
 <Links webSiteName="Blog" image={start} url="#Blogs about my web developement career"/><br/>
 <Links webSiteName="Freelance" image={nyscda} url="#Freelance Web Pages"/>
 </div>
-<AboutMe message={freeLance.msg}/>
-
+<div style={blogContents}>
+<AboutMe style={blogContents} message={freeLance.msg}/>
+</div>
 
 <PortSection sectionName="New York Code + Design Projects"/>
 
