@@ -29,6 +29,8 @@ import Links from "./components/Links"
 import {NavLink} from 'react-router-dom'
 import nyscda from './pictures/download.png'
 import Scroll from 'react-scrollable-anchor'
+import ohm from './pictures/ohm.png'
+
 import './App.css';
 
 const siteDescription= {
@@ -207,6 +209,11 @@ class App extends Component {
 <Project webSiteName="Extreme Sports Aviation" image={xsa} url="https://protected-shelf-29067.herokuapp.com/"/>
 </div>
 
+<div style={divStyle2}>
+<div className="webSiteName"></div>
+<p style={siteDescription}>Brand New</p>
+<Project webSiteName="Yoga" image={ohm} url="https://lit-sands-93936.herokuapp.com"/>
+</div>
 
 <div style={divStyle2}>
 <Project webSiteName="Frank Dimodica Art" image={frank} url="http://frankdimodicaart.com/"/>
