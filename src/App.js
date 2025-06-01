@@ -17,8 +17,14 @@ import Home from "./components/Home"
 import February2 from "./components/February2"
 import February3 from "./components/February3"
 import February7 from "./components/February7"
-import February20 from "./components/February20"
-import March2 from "./components/March2"
+import february22025 from "./components/february22025"
+import june22025 from "./components/june22025"
+   
+import june32025 from "./components/june32025"
+import march25025 from "./components/march25025"
+import march72025 from "./components/march72025"
+import march272025 from "./components/march272025"
+
 import AboutMe from "./components/AboutMe"
 import Education from "./components/Education"
 import PortSection from "./components/PortSection"
@@ -180,17 +186,9 @@ class App extends Component {
 <AboutMe style={blogContents} message={freeLance.msg}/>
 </div>
 
-<PortSection sectionName="New York Code + Design Projects"/>
 
-<div style={divStyle2}>
-<Project webSiteName="New York Code and Design Academy Class Projects" image={scope} url="https://salty-forest-43612.herokuapp.com/"/>
-</div>
 
-<div style={divStyle2}>
 
-<Project webSiteName="Yoga Class Generator" image={chakras} url="https://mighty-wave-90208.herokuapp.com/"/>
-
-</div>
 
 </div>
 
@@ -199,21 +197,10 @@ class App extends Component {
 <div style={divStyle} >
 <PortSection style={divStyle2} sectionName="Freelance Work Experience"/>
 
-<div style={divStyle2}>
-<Project webSiteName="Inside Outside Improvements" image={james} url="http://insideoutsideimprovements.com/"/>
-</div>
 
 
-<div style={divStyle2}>
-<p style={siteDescription}>Brand New</p>
-<Project webSiteName="Extreme Sports Aviation" image={xsa} url="https://protected-shelf-29067.herokuapp.com/"/>
-</div>
 
-<div style={divStyle2}>
-<div className="webSiteName"></div>
-<p style={siteDescription}>Brand New</p>
-<Project webSiteName="Yoga" image={ohm} url="https://lit-sands-93936.herokuapp.com"/>
-</div>
+
 
 <div style={divStyle2}>
 <Project webSiteName="Frank Dimodica Art" image={frank} url="http://frankdimodicaart.com/"/>
@@ -231,14 +218,22 @@ class App extends Component {
         <Route  path="/February2" component={February2}></Route>
         <Route  path="/February3" component={February3}></Route>
         <Route  path="/February7" component={February7}></Route>
-        <Route  path="/February20" component={February20}></Route>
-        <Route  path="/March2" component={March2}></Route>
+        <Route  path="/february22025" component={february22025}></Route>
+        <Route  path="/june22025" component={june22025}></Route>
+
+        <Route  path="/june32025" component={june32025}></Route>
+        <Route  path="/march25025" component={march25025}></Route>
+        <Route  path="/march72025" component={march72025}></Route>
+        <Route  path="/march272025" component={march272025}></Route>
+        
 <Route component={Error}></Route>
         </Switch>
     </div>
 </BrowserRouter>
 </Scroll>
 </div>
+
+
       </div>
     );
   }

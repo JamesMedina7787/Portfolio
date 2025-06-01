@@ -33,8 +33,14 @@ class Navigation extends Component {
     <NavLink style={menuItem}  to="/February2">February2nd 2019 - My Start</NavLink><br/>
     <NavLink style={menuItem} to="/February3">February3rd 2019 - Coding Boot Camp</NavLink> <br/>
     <NavLink style={menuItem} to="/February7">February7th 2019 - Graduation</NavLink><br/>
-    <NavLink style={menuItem} to="/February20">February20th 2019 - Florida Vacation</NavLink><br/>
-        <NavLink style={menuItem} to="/March2">March2nd 2019 - Back in New York</NavLink>
+    <NavLink style={menuItem} to="/february22025">February 22nd 2025 McDonalds App The Location Problem</NavLink>
+      <NavLink style={menuItem} to="/march72025">March 2nd 2025 - Rousseau and individualized morality</NavLink>
+    <NavLink style={menuItem} to="/march25025">March 25th 2025 - AI infiltrates the Education System</NavLink>
+  
+     <NavLink style={menuItem} to="/march272025">March 27th 2025 - Hacking and the point of it</NavLink>
+
+
+   
       </div>
     );
   }

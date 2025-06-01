@@ -26,9 +26,9 @@ class Education extends Component {
       return (
         <div style={blogContent} className="Education">
         <p style={school}>
-        `I have attended New York Code and Design Academy. I use Node.JS, Github, and heroku to develop from the ground up. These are Web sites I have developed using my newly mastered skills.`
+        I have attended New York Code and Design Academy. I use Node.JS, Github, and heroku to develop from the ground up. These are Web sites I have developed using my newly mastered skills.
 </p>
-             <img style={certificate} src={this.props.image} alt="nyscda"/>
+             <img style={certificate} src={this.props.image} alt="certification from NYCDA"/>
         </div>
       );
     }
