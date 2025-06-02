@@ -27,7 +27,7 @@ const imgStyle= {
 }
 class june22025 extends Component {
   render() {
-    console.log()
+    
     return (
       <div style={blogContent} className="February7">
       <p>

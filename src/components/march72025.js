@@ -19,13 +19,15 @@ Laws are meant to maintain order, but they do not always account for the ethical
 
 I have a two-year-old child. I live in a motel, constantly uncertain if I will be homeless when the next payment is due. My primary responsibility is to my child’s well-being, ensuring she has stability, love, and guidance. When I make difficult financial decisions out of necessity, it is to stretch every dollar; toward giving my daughter the life she deserves.
 
-In this case, the ethical principle of parental duty overrides the strict legality of fare payment. If laws exist to serve society, then society should not force parents into a choice between legal compliance and providing for their children. Ethical laws should uplift the vulnerable, not penalize survival. I would really like to see society come up with better solutions for train and bus fares. It really seems like a good idea to make it easier for people to go to work. I can't imagine how that wouldn't promote a healthy economy. Especially for those of us who can't afford transportation and are most exhausted from cost of living. `  }
+In this case, the ethical principle of parental duty overrides the strict legality of fare payment. If laws exist to serve society, then society should not force parents into a choice between legal compliance and providing for their children. Ethical laws should uplift the vulnerable, not penalize survival. I would really like to see society come up with better solutions for train and bus fares. It really seems like a good idea to make it easier for people to go to work. I can't imagine how that wouldn't promote a healthy economy. Especially for those of us who can't afford transportation and are most exhausted from cost of living. `  
+};
 const imgStyle= {
   width:'100%'
-}
+};
+
 class march72025 extends Component {
-  render() {
-    console.log()
+  
+    render(){
     return (
       <div style={blogContent} className="February7">
       <p>
@@ -35,5 +37,6 @@ class march72025 extends Component {
     );
   }
 }
+
 
 export default march72025;

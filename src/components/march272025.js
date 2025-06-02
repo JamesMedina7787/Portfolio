@@ -17,11 +17,11 @@ const imgStyle= {
 }
 class march272025 extends Component {
   render() {
-    console.log()
+    
     return (
       <div style={blogContent} className="February7">
       <p>
-{blogContent.content}
+       {blogContent.content}
       </p>
       </div>
     );

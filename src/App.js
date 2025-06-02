@@ -124,7 +124,7 @@ const freeLance = {
   link: 'Freelance Web Pages'
 }
 const bootCamp = {
-  msg: 'I am fluent in Javascript, HTML, CSS, JQuery, SQL, PHP, Node.JS, React, and GitHub. I deploy my sites with Heroku. I have experience writing Java. I am patient, understanding, logical, and level headed.'
+  msg: 'I am fluent in Javascript, HTML, CSS, JQuery, SQL, PHP, Node.JS, React, GitHub, Java, Linux, Ubuntu, Nginx, and Wireshark. I deploy my sites with Digital Ocean. I am patient, understanding, logical, and level headed.'
 }
 
 class App extends Component {
@@ -133,29 +133,17 @@ class App extends Component {
 
     this.state = {
       projects: [
-        {
-          title: 'Yoga Class Generator',
-          url: "https://mighty-wave-90208.herokuapp.com/"
-        },
-        {
-              title:'Extreme Sports Aviation',
-              url:"https://protected-shelf-29067.herokuapp.com/"
-            },
-            {  title: 'Inside Outside Improvements',
-                   url:'http://insideoutsideimprovements.com/'},
-        {
-        title: 'New York Code and Design Academy Class projects',
-        url: "https://salty-forest-43612.herokuapp.com/"
-      },
+       
+
+  
       {
-        title:'Comedy Portfolio Page',
-        url:"https://desolate-meadow-81674.herokuapp.com/"
+        title:'Yoga Empire',
+        url:"http://www.yogaempire.yoga/"
       },
-      {
+   {
         title:'Frank Dimodica Art',
         url:"http://www.frankdimodicaart.com/"
-      },
-
+      }
       ]
     }
   }
@@ -203,7 +191,11 @@ class App extends Component {
 
 
 <div style={divStyle2}>
-<Project webSiteName="Frank Dimodica Art" image={frank} url="http://frankdimodicaart.com/"/>
+<Project webSiteName="Frank Dimodica Art" image={frank} url="https://frankdimodicaart.com/"/>
+</div>
+
+<div style={divStyle2}>
+<Project webSiteName="Yoga Empire" image={ohm} url="https://yogaempire.yoga/"/>
 </div>
 
 </div>
@@ -214,13 +206,12 @@ class App extends Component {
     <div style={blogMenu}>
      <Navigation  />
         <Switch >
-            <Route  path="/" component={Home} exact></Route>
+        <Route  path="/" component={Home} exact></Route>
         <Route  path="/February2" component={February2}></Route>
         <Route  path="/February3" component={February3}></Route>
         <Route  path="/February7" component={February7}></Route>
         <Route  path="/february22025" component={february22025}></Route>
         <Route  path="/june22025" component={june22025}></Route>
-
         <Route  path="/june32025" component={june32025}></Route>
         <Route  path="/march25025" component={march25025}></Route>
         <Route  path="/march72025" component={march72025}></Route>
