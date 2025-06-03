@@ -19,6 +19,9 @@ import February3 from "./components/February3"
 import February7 from "./components/February7"
 import february22025 from "./components/february22025"
 import june22025 from "./components/june22025"
+
+import june42025 from "./components/june42025"
+import june52025 from "./components/june52025"
    
 import june32025 from "./components/june32025"
 import march25025 from "./components/march25025"
@@ -216,6 +219,8 @@ class App extends Component {
         <Route  path="/march25025" component={march25025}></Route>
         <Route  path="/march72025" component={march72025}></Route>
         <Route  path="/march272025" component={march272025}></Route>
+        <Route  path="/june42025" component={june42025}></Route>
+        <Route  path="/june52025" component={june52025}></Route>
         
 <Route component={Error}></Route>
         </Switch>

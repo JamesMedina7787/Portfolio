@@ -37,7 +37,8 @@ class Navigation extends Component {
     <NavLink style={menuItem} to="/march72025">March 2nd 2025 - Rousseau and individualized morality</NavLink><br/>
     <NavLink style={menuItem} to="/march25025">March 25th 2025 - AI infiltrates the Education System</NavLink><br/>
     <NavLink style={menuItem} to="/march272025">March 27th 2025 - Hacking and the point of it</NavLink><br/>
-
+    <NavLink style={menuItem} to="/june42025">June 4th 2025 - Reflection for Technical Ethics at FLCC</NavLink><br/>
+    <NavLink style={menuItem} to="/june52025">June 5th 2025 - Final Paper for Technical Ethics at FLCC</NavLink><br/>
 
    
       </div>
