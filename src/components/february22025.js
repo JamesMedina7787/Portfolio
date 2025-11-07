@@ -5,6 +5,7 @@ const blogContent= {
   border:"2px dotted black",
   padding: "10px",
   margin: '30px',
+  width:'100%',
   fontSize: '1.38em',
   content:      `A real world application of the principle of SELF in Software Engineering that I would like to use as an example would be working on the McDonald's app. I love this app. Principal 8 emphasizes lifelong learning, ethical responsibility, and continuous improvement in the practice of software engineering. I chose this one because I’ve always taught myself computers and actually enjoy reteaching myself as technology advances. Ive coded Visual Basic in highschool. I learned to be a full stack developer in coding school twenty years afterwards and already freelance web developed a paying client by that point. AI is making it easier to learn now and is an excellent 
 
@@ -18,10 +19,9 @@ Frequent updates require time, money and resources. Mcdonalds might prioritize p
 
 
 One concept in this code that should be defined more carefully is “reasonable time” in Principle 8.02, which states that engineers should improve their ability to create ”safe, reliable, and useful quality software at reasonable cost and within a reasonable time. It isn't clear what reasonable time means. It should reflect that reasonable time should so there is minimal loss to the customer and the restaurant's loss of food which also affects the environment.`
-}
-const imgStyle= {
-  width:'100%'
-}
+};
+  
+
 class february22025 extends Component {
   render() {
     console.log()

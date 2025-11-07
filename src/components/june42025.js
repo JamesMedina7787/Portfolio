@@ -7,6 +7,7 @@ const blogContent= {
   padding: "10px",
   margin: '30px',
   fontSize: '1.38em',
+   width:'100%',
   content:    `Guiding Our Children Through the Tech Revolution: A Personal Reflection on Ethics, Innovation, and Hope
 
 In the course of 25SP Technical Ethics U4 this fall, one theme stood out to me more than any other; the ethical implications of technological advancement, especially as they relate to the world our children are growing up in. As a parent and someone who has witnessed the rapid evolution of technology first-hand, I found myself returning again and again to one question; how do we protect access in a monetized internet while keeping our culture and humanism intact? The discussions in this class, particularly those surrounding the philosophies of Kant, utilitarianism, and transhumanism, helped me frame my thoughts not only as a student, but as a father trying to carve out a better future for my daughter.
@@ -22,9 +23,8 @@ Despite the challenges, I remain optimistic. I truly believe this is the greates
 This class did not just give me knowledge. It gave me vision. It reminded me that philosophy is not just about abstract theories, it is about how we live, how we lead, and how we raise the next generation. I may not have all the answers, but I am grateful for the questions I have learned to ask. As we move into a future shaped by code and commerce, my hope is that we do not forget our shared humanity. That is the only way we will ever build a future worth living in.
 `  
 };
-const imgStyle= {
-  width:'100%'
-};
+ 
+
 
 class june42025 extends Component {
   

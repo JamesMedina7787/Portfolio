@@ -7,6 +7,7 @@ const blogContent= {
   padding: "10px",
   margin: '30px',
   fontSize: '1.38em',
+   width:'100%',
   content:    `Social media and digital platforms play a major role in shaping public opinion, often at the cost of truth and accountability. Algorithms have attracted primal desires into an abyss of ignorance. We scroll towards what we want and what stimulus the service tests us with; and then we are enticed into agendas by whoever manipulates the content. It is a monetary method of selling misinformation. The consequences are dire.
 
 Rousseau's version of Social Contract Theory emphasizes the "general will", where laws and governance should reflect the collective good rather than individual manipulation. The spread of misinformation disrupts informed democratic decision-making, making it difficult to uphold truth as a societal value. In this digital age, the public's consent is being exploited rather than honored, as platforms prioritize engagement over accuracy. 
@@ -21,9 +22,7 @@ I have a two-year-old child. I live in a motel, constantly uncertain if I will b
 
 In this case, the ethical principle of parental duty overrides the strict legality of fare payment. If laws exist to serve society, then society should not force parents into a choice between legal compliance and providing for their children. Ethical laws should uplift the vulnerable, not penalize survival. I would really like to see society come up with better solutions for train and bus fares. It really seems like a good idea to make it easier for people to go to work. I can't imagine how that wouldn't promote a healthy economy. Especially for those of us who can't afford transportation and are most exhausted from cost of living. `  
 };
-const imgStyle= {
-  width:'100%'
-};
+  
 
 class march72025 extends Component {
   

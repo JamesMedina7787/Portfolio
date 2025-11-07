@@ -1,62 +1,34 @@
-import React, { Component } from 'react';
-const divStyle= {
-  flex:'1',
-  fontSize:".6em",
-  fontWeight:"bold",
-  textAlign: "center",
+import React from 'react';
+import PropTypes from 'prop-types';
+
+const container = {
+  flex: '1',
+  fontSize: '.6em',
+  fontWeight: 'bold',
+  textAlign: 'center',
   textShadow: '3px 3px grey',
-color:'white'
-}
-const sectionStyle= {
-  backgroundColor:"oldlace"
-}
-const labelStyle= {
-  flex:'1',
-  fontSize:"2em",
-  fontWeight:"bold",
-  maxWidth: '200px'
-}
-const imgStyle= {
-  width:'100%',
-    maxWidth:'100px',
-    color: 'white',
+  color: 'white',
+};
+const label = { flex: '1', fontSize: '2em', fontWeight: 'bold', maxWidth: 200 };
+const imgStyle = { width: '100%', maxWidth: 100 };
+const anchor = { flex: '1', maxWidth: 200, color: 'white', textDecoration: 'none' };
 
-}
-
-const linkStyle= {
-  flex:'1',
-  maxWidth: '200px',
-  color:'white'
+export default function Links({ webSiteName, url, image, alt }) {
+  return (
+    <div style={container} className="Links">
+      <label style={label}>{webSiteName}</label><br />
+      <a style={anchor} href={url} target="_blank" rel="noreferrer">
+        {/* alt added; no duplicate props */}
+        <img style={imgStyle} src={image} alt={alt || webSiteName} /><br />
+        {url}<br />
+      </a>
+    </div>
+  );
 }
 
-const added= {
-  color:'#331e05',
-  fontFamily: 'technical',
-  fontStretch: 'expanded',
-  fontSize: '1.1em'
-}
-
-class Links extends Component {
-  render() {
-    console.log()
-    return (
-      <div style={divStyle} className="Links">
-
-      <label style={labelStyle}>{this.props.webSiteName}</label><br/>
-      <a style={linkStyle} href={this.props.url} href={this.props.url} alt="James Medina Links">
-       <img style={imgStyle} src={this.props.image}/><br/>
-        {this.props.url}<br />
-</a>
-      </div>
-
-    );
-  }
-}
-
-export default Links;
-
-
-
-
-
-//
+Links.propTypes = {
+  webSiteName: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  alt: PropTypes.string
+};

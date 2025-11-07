@@ -6,6 +6,7 @@ const blogContent= {
   border:"2px dotted black",
   padding: "10px",
   margin: '30px',
+    width:'100%',
   fontSize: '1.38em',
   content:    `Social Media, Algorithms, and the Future of Visibility in Entertainment
 
@@ -50,9 +51,8 @@ Vaidhyanathan, Siva. Antisocial Media: How Facebook Disconnects Us and Undermine
 
 `  
 };
-const imgStyle= {
-  width:'100%'
-};
+
+
 
 class june52025 extends Component {
   

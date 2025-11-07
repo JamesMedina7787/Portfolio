@@ -1,47 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const sectionStyle= {
-  backgroundColor:"oldlace"
-}
-const labelStyle= {
-  fontSize:"2em",
-  fontWeight:"bold"
-}
-const imgStyle= {
-  backgroundColor:"oldlace",
-  width:'100%'
-}
+const sectionStyle = { backgroundColor: 'oldlace' };
+const labelStyle = { fontSize: '2em', fontWeight: 'bold' };
+const imgStyle = { backgroundColor: 'oldlace', width: '100%' };
+const linkStyle = { backgroundColor: 'oldlace' };
+const noteStyle = { color: '#331e05', fontFamily: 'technical', fontStretch: 'expanded', fontSize: '1.1em' };
 
-const linkStyle= {
-  backgroundColor:"oldlace"
-}
-
-const added= {
-  color:'#331e05',
-  fontFamily: 'technical',
-  fontStretch: 'expanded',
-  fontSize: '1.1em'
-}
-
-
-class Project extends Component {
-
-  render() {
-    return (
-      <div className="Project">
+export default function Project({ webSiteName, url, image }) {
+  return (
+    <div className="Project">
       <section style={sectionStyle}>
-       <label style={labelStyle}>{this.props.webSiteName}</label><br/>
-       <a style={linkStyle} href={this.props.url} alt="James Medina JWM Porfolio">
-        <img style={imgStyle} src={this.props.image}/><br/>
-         {this.props.url}<br />
-<p style={added}>Click the above Picture, or web address, to visit the corresponding JWM website</p>
-           <br/>
+        <label style={labelStyle}>{webSiteName}</label><br />
+        <a style={linkStyle} href={url} target="_blank" rel="noreferrer">
+          {/* alt added */}
+          <img style={imgStyle} src={image} alt={webSiteName} /><br />
+          {url}<br />
+          <p style={noteStyle}>Click the picture or address to visit the site</p>
         </a>
-
-       </section>
-      </div>
-    );
-  }
+      </section>
+    </div>
+  );
 }
 
-export default Project;
+Project.propTypes = {
+  webSiteName: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired
+};

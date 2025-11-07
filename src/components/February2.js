@@ -5,6 +5,7 @@ const blogContent= {
   border:"2px dotted black",
   padding: "10px",
   margin: '30px',
+  width:'100%',
   fontSize: '1.38em',
   content:     `     I have been a yoga instructor for 7 years now. It has given me plenty of satisfaction. I consider it a job though. I consider Coding as a great career. Around the same time that I started teaching yoga, I bought a book about Javascript. The book was titled “A better way to learn javascript”. It was an incredible book. I loved the functional and logical aspects of computer programming. It introduced me to the wonderful world of coding.
 
@@ -22,10 +23,9 @@ const blogContent= {
 
        FrankDimodicaArt.com and InsideOutsideImprovements.com both were successful sites. I was hungry for more though. First of all, the sites were http and not https. A problem that I didn’t know how to fix. They were still dependent on the CMS website baker. It made it very hard to fiddle with when I wanted to modify the sites. Also, the CMS seemed to be dwindling away. I couldn’t find new templates after a while. It became increasingly hard to make new pages. Another problem I was having was adding modules, if I wanted to add a map or some other function. It just seemed like I should be moving on by this point, but where? Working freelance had it’s limitations too. I just wasn’t making the living of my dreams. I read another “For Dummies:” book about native Java. It was tremendously interesting. I copied all the code examples in my notebooks, and traced over them with colored pencils then pens. As fascinated as I was by Java, I just didn’t really know ultimately how to apply it to my professional work and goals. The time had come to take the next step in my coding career. I was going to have to go back to school.
   `
-}
-const imgStyle= {
-  width:'100%'
-}
+};
+  
+
 class February2 extends Component {
   render() {
     console.log()
