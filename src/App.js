@@ -17,6 +17,7 @@ import June32025 from "./components/june32025";
 import March25025 from "./components/march25025";
 import March72025 from "./components/march72025";
 import March272025 from "./components/march272025";
+import August32026 from "./components/August32026";
 
 import AboutMe from "./components/AboutMe";
 import PortSection from "./components/PortSection";
@@ -90,8 +91,10 @@ const freeLance = {
 };
 
 const bootCamp = {
-  msg: 'I am fluent in Javascript, HTML, CSS, JQuery, SQL, PHP, Node.JS, React, GitHub, Java, Linux, Ubuntu, Nginx, and Wireshark. I deploy my sites with Digital Ocean. I am patient, understanding, logical, and level headed.'
-};
+  msg: `I am a Network Engineer and Computer Science graduate with hands‑on experience in IPv6, 
+  Linux systems, routing, subnetting, Wireshark analysis, Nginx hosting, and DigitalOcean deployments. 
+  I also build full‑stack applications when needed, but my primary focus is modern internet 
+  infrastructure, cybersecurity fundamentals, and systems administration.`};
 
 class App extends Component {
   constructor() {
@@ -123,7 +126,7 @@ class App extends Component {
             <AboutMe message={bootCamp.msg} />
           </div>
 
-          <PortSection style={divStyle2} sectionName="Full Stack Developer" />
+          <PortSection style={divStyle2} sectionName="Network Engineering • Linux Systems • Web Development" />
 
           <div style={linkDivStyle}>
             {/* Use slug-safe anchors */}
@@ -164,18 +167,19 @@ class App extends Component {
               />
 
               {/* Your pages */}
-              <Route path="/home" component={Home} />
-              <Route path="/February2" component={February2} />
-              <Route path="/February3" component={February3} />
-              <Route path="/February7" component={February7} />
-              <Route path="/february22025" component={February22025} />
-              <Route path="/june22025" component={June22025} />
-              <Route path="/june32025" component={June32025} />
-              <Route path="/march25025" component={March25025} />
-              <Route path="/march72025" component={March72025} />
-              <Route path="/march272025" component={March272025} />
-              <Route path="/june42025" component={June42025} />
-              <Route path="/june52025" component={June52025} />
+                    <Route path="/August32026" component={August32026} />
+                    <Route path="/june52025" component={June52025} />
+                    <Route path="/june42025" component={June42025} />
+                    <Route path="/march272025" component={March272025} />
+                    <Route path="/march72025" component={March72025} />
+                    <Route path="/march25025" component={March25025} />
+                    <Route path="/june32025" component={June32025} />
+                    <Route path="/june22025" component={June22025} />
+                    <Route path="/february22025" component={February22025} />
+                    <Route path="/February7" component={February7} />
+                    <Route path="/February3" component={February3} />
+                    <Route path="/February2" component={February2} />
+                    <Route path="/home" component={Home} />
 
               {/* Catch-all */}
               <Route component={Error} />

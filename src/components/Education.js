@@ -26,8 +26,13 @@ class Education extends Component {
       return (
         <div style={blogContent} className="Education">
         <p style={school}>
-        I have attended New York Code and Design Academy. I use Node.JS, Github, and heroku to develop from the ground up. These are Web sites I have developed using my newly mastered skills.
-</p>
+                  I graduated from Finger Lakes Community College with an Associate Degree in Computer Science, 
+          where I studied networking fundamentals, data structures, systems administration, and TCP/IP. 
+          I continued my professional development by earning the IPv6 Forum Network Engineer (Silver) 
+          certification and expanding into Linux systems, routing, cybersecurity fundamentals, and 
+          modern internet infrastructure. I also previously attended the New York Code and Design Academy, 
+          where I learned full‑stack development and built production‑ready web applications.
+        </p>
              <img style={certificate} src={this.props.image} alt="certification from NYCDA"/>
         </div>
       );
