@@ -3,17 +3,26 @@ import PropTypes from 'prop-types';
 
 const sectionStyle = { backgroundColor: 'oldlace' };
 const labelStyle = { fontSize: '2em', fontWeight: 'bold' };
-const imgStyle = { backgroundColor: 'oldlace', width: '100%' };
+const imgStyle = { 
+  backgroundColor: 'oldlace', 
+  width: '80%',
+  maxWidth: "300px",
+  margin: "0 auto",
+  display: "block"
+};
 const linkStyle = { backgroundColor: 'oldlace' };
 const noteStyle = { color: '#331e05', fontFamily: 'technical', fontStretch: 'expanded', fontSize: '1.1em' };
+const projectWrapper = {
+  maxWidth: "900px",
+  margin: "20px auto"
+};
 
-export default function Project({ webSiteName, url, image }) {
+function Project({ webSiteName, url, image }) {
   return (
-    <div className="Project">
+    <div style={projectWrapper} className="Project">
       <section style={sectionStyle}>
         <label style={labelStyle}>{webSiteName}</label><br />
         <a style={linkStyle} href={url} target="_blank" rel="noreferrer">
-          {/* alt added */}
           <img style={imgStyle} src={image} alt={webSiteName} /><br />
           {url}<br />
           <p style={noteStyle}>Click the picture or address to visit the site</p>
@@ -28,3 +37,5 @@ Project.propTypes = {
   url: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired
 };
+
+export default React.memo(Project);

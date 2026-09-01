@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 // import start from './pictures/start.jpg'
 const blogContent= {
-  flex:'3',
   border:"2px dotted black",
   padding: "10px",
-  margin: '30px',
-  width:'100%',
+  margin: '40px auto',
   fontSize: '1.38em',
+   width:'100%',
+   maxWidth:'900px',
   content:     `     I have been a yoga instructor for 7 years now. It has given me plenty of satisfaction. I consider it a job though. I consider Coding as a great career. Around the same time that I started teaching yoga, I bought a book about Javascript. The book was titled “A better way to learn javascript”. It was an incredible book. I loved the functional and logical aspects of computer programming. It introduced me to the wonderful world of coding.
 
        My first computer book made me excited to learn more. Now that I knew how to use javascript, I yearned to put it to good use. I never had any experience with webpages before this moment in my life. I decided to learn HTML. I went to Barnes & Nobles, and I purchased HTML and CSS for dummies. It was a many in one style book. It was about a thousand pages long. It was split into sections. The sections were as follows; HTML, CSS, Javascript, JQUERY, PHP, SQL, and CMS. I read the book cover to cover.

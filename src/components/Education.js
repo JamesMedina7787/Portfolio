@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 
 const certificate={
-  flex:'1',
-  flexBasis:'30%',
+  
   width:'30%',
   height:'auto'
 }
 const school={
-  flex:'3',
+
   flexBasis:'70%',
 }
-const blogContent= {
+const blogContent = {
   display: 'flex',
   border:"2px dotted silver",
   padding: "10px",
@@ -19,6 +18,7 @@ const blogContent= {
   color:'lightblue',
   maxHeight: '400px'
 }
+
 
 class Education extends Component {
     render() {

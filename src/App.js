@@ -35,50 +35,80 @@ import ohm from './pictures/ohm.png';
 import './App.css';
 
 // ---------- styles ----------
+
+const pageWrapper = {
+  maxWidth: "900px",
+  margin: "0 auto",
+  boxSizing: "border-box",
+  padding: "0 40px"   
+};
+
+
 const blogContents = {
-  flex: '3',
   border: "2px solid blue",
   borderImage: `url(${blue}) 50 fill / 20px / 10px round`,
-  padding: "10px",
-  margin: '30px',
+  padding: "20px",
+  margin: '40px auto',
+  maxWidth: '900px',
+  width: '100%',
   fontSize: '1.38em',
   color: 'lightblue'
 };
 
 const divStyle = {
   border: "2px dotted beige",
-  display: "flex",
-  flexWrap: "wrap",
+  display: "block",
   backgroundColor: '#331e05',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  flexDirection: "row",
   fontFamily: 'bazooka',
-  textAlign: 'center'
+  textAlign: 'center',
+  maxWidth: "900px",
+  margin: "0 auto"
 };
+
 
 const linkDivStyle = {
   border: "2px dotted black",
   display: "flex",
   flexWrap: "wrap",
-  backgroundColor: '#331e05',
-  justifyContent: 'center',
-  fontFamily: 'bazooka',
-  textAlign: "center"
+  justifyContent: "center",
+  fontFamily: "bazooka",
+  textAlign: "center",
+  backgroundColor: "transparent",
+  maxWidth: "900px",       
+  margin: "0 auto",        
+  boxSizing: "border-box"   
 };
 
 const divStyle2 = {
-  flex: "1",
   border: "2px dotted beige",
-  maxWidth: '425px',
+  maxWidth: "425px",
   padding: "3px",
-  margin: '10px'
+  margin: "10px auto",
+  boxSizing: "border-box"
 };
 
 const blogMenu = {
   whiteSpace: 'pre-wrap',
-  textAlign: 'left'
+  textAlign: 'left',
+  maxWidth: "900px",
+  margin: "0 auto",
+  boxSizing: "border-box",
+  padding: "0 40px"   
 };
+
+
+const aboutMeStyle = {
+  padding: "20px",
+  margin: "40px auto",
+  maxWidth: "900px",
+  fontSize: "1.38em",
+  color: "lightblue",
+  border: "2px dotted beige",
+  backgroundColor: "transparent",
+  boxSizing: "border-box"   
+};
+
+
 
 // ---------- helpers ----------
 const slug = (s) => s.toLowerCase().replace(/\s+/g, '-');
@@ -111,18 +141,22 @@ class App extends Component {
     console.log('App.render() fired'); // sanity check
 
     return (
-      <div className="App" style={{ color: '#111', background: '#f5f5f5', minHeight: '100vh' }}>
+<div className="App" style={{ color: '#111', background: '#f5f5f5', minHeight: '100vh' }}>
+  <div style={pageWrapper}>
   
         <James />
 
         {/* Top section (links, about, buttons) */}
-        <div style={divStyle} className="App">
-          <div style={linkDivStyle}>
+     <div style={divStyle}>
+
+
+       <div style={linkDivStyle}>
             <Links webSiteName="GitHub" image={git} url="https://github.com/JamesMedina7787" /><br />
             <Links webSiteName="LinkedIn" image={linked} url="https://www.linkedin.com/in/james-medina-766170161/" />
-          </div>
+       </div>
 
-          <div style={blogContents}>
+
+          <div style={aboutMeStyle}>
             <AboutMe message={bootCamp.msg} />
           </div>
 
@@ -134,7 +168,7 @@ class App extends Component {
             <Links webSiteName="Freelance" image={nyscda} url={`#${FREELANCE_ANCHOR}`} />
           </div>
 
-          <div style={blogContents}>
+          <div style={aboutMeStyle}>
             <AboutMe message={freeLance.msg} />
           </div>
         </div>
@@ -186,6 +220,7 @@ class App extends Component {
             </Switch>
           </div>
         </section>
+      </div>
       </div>
     );
   }

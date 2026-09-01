@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 // import nyscda from './pictures/nyscda.jpg'
 const blogContent= {
-  flex:'3',
   border:"2px dotted black",
   padding: "10px",
-  margin: '30px',
+  margin: '40px auto',
   fontSize: '1.38em',
    width:'100%',
+   maxWidth:'900px',
   content:`     I hit a road block in my coding career. I had two freelance projects under my belt, but I wasn’t making nearly as much money as I needed to support my life. I learned many different programming languages, but I still was dependant on a CMS. Despite everything I knew, going about getting a job was a totally different venture. I needed job training. I did some research, and found a very interesting option; “Coding Boot Camp”.
 
      I explored my options. Ultimately I came upon a NYC school in downtown Manhattan. It was called; “New York and Design Academy”. I enrolled in the “Javascript Intensive” program. My first impression of the school was a good one. I was very humbled. I thought I had known so much about coding, and I did. I was way ahead of the class. As the class continued I learned so much more than I possibly predicted I would. I was really getting my moneys worth.

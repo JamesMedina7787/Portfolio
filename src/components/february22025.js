@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 // import surf from './pictures/surf.jpg'
 const blogContent= {
-  flex:'3',
-  border:"2px dotted black",
+    border:"2px dotted black",
   padding: "10px",
-  margin: '30px',
-  width:'100%',
+  margin: '40px auto',
   fontSize: '1.38em',
+   width:'100%',
+   maxWidth:'900px',
   content:      `A real world application of the principle of SELF in Software Engineering that I would like to use as an example would be working on the McDonald's app. I love this app. Principal 8 emphasizes lifelong learning, ethical responsibility, and continuous improvement in the practice of software engineering. I chose this one because I’ve always taught myself computers and actually enjoy reteaching myself as technology advances. Ive coded Visual Basic in highschool. I learned to be a full stack developer in coding school twenty years afterwards and already freelance web developed a paying client by that point. AI is making it easier to learn now and is an excellent 
 
 source to use toward continual learning.

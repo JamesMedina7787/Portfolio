@@ -2,12 +2,12 @@
       import React, { Component } from 'react';
 // import surf from './pictures/surf.jpg'
 const blogContent= {
-  flex:'3',
   border:"2px dotted black",
   padding: "10px",
-  margin: '30px',
+  margin: '40px auto',
   fontSize: '1.38em',
    width:'100%',
+   maxWidth:'900px',
   content:    `It’s time for IPV4 to step aside and let IPV6 take the wheel for global dominance of the internet. IPV4 has had its time. It’s been around for nearly 5 decades. It had had more than its fair share of dominance over the years. The internet needs to kick IpV4 to the curb, and for good reasons. The world is ready to discover what being connected to the internet really could be all about. The founders could never have imagined so many devices beyond the desktop computer to connect to. Since then, our refrigerators, wrist watches, doorbells, cellular phones, and perhaps pretty much everything; could be connected as well. After all, IPV6 has more addresses than grains of sand on the earth. Quintillion is a big number, and IPV6 available addresses; are several times that big. So literally giving everything its own address becomes a rational idea in that regard, all thanks to IPV6. IPV6 is not just superior in that way though. IPV6 is better than IPV4 through its routing capabilities, security and connectivity as well. IPV4 needs to do everyone a favor and go away.
 
 IPV6 is the ultimate leader in addressing space. IPV6 puts IPV4’s 4.3 billion unique addresses to absolute shame. It really wasn’t the founders of the internet’s fault; Nobody could have predicted how far the internet would ultimately have become. Cell phones were a major turning point in the world of networking when they came out. Back in 2000, I remember sitting in the lecture hall at R.I.T. I was a New Media Design major at that time in my life. I was listening to the professor there, talking about the change that smart phones will have in the future. Boy was he right. Not long after that everyone had a smartphone to the point now that your common influencer has all the computing power of a Hollywood studio in their pocket. Well now, all those smart phones became the must have for literally everyone who wants to be anybody. This greatly expanded the size and number of networks. Now we have a population boom for internet addresses. Much to everyone’s disappoint; It wasn’t long before IPV4 would be shooting blanks. 

@@ -2,12 +2,12 @@
       import React, { Component } from 'react';
 // import surf from './pictures/surf.jpg'
 const blogContent= {
-  flex:'3',
   border:"2px dotted black",
   padding: "10px",
-  margin: '30px',
+  margin: '40px auto',
   fontSize: '1.38em',
    width:'100%',
+   maxWidth:'900px',
   content:    `Social media and digital platforms play a major role in shaping public opinion, often at the cost of truth and accountability. Algorithms have attracted primal desires into an abyss of ignorance. We scroll towards what we want and what stimulus the service tests us with; and then we are enticed into agendas by whoever manipulates the content. It is a monetary method of selling misinformation. The consequences are dire.
 
 Rousseau's version of Social Contract Theory emphasizes the "general will", where laws and governance should reflect the collective good rather than individual manipulation. The spread of misinformation disrupts informed democratic decision-making, making it difficult to uphold truth as a societal value. In this digital age, the public's consent is being exploited rather than honored, as platforms prioritize engagement over accuracy. 

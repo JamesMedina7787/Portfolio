@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 const divStyle= {
-  flex:"3",
   fontSize:"4em",
   fontWeight:"bold",
   textAlign: "center",
@@ -20,4 +19,4 @@ class James extends Component {
   }
 }
 
-export default James;
+export default React.memo(James);

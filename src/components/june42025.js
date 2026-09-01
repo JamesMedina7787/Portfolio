@@ -2,12 +2,12 @@
       import React, { Component } from 'react';
 // import surf from './pictures/surf.jpg'
 const blogContent= {
-  flex:'3',
   border:"2px dotted black",
   padding: "10px",
-  margin: '30px',
+  margin: '40px auto',
   fontSize: '1.38em',
    width:'100%',
+   maxWidth:'900px',
   content:    `Guiding Our Children Through the Tech Revolution: A Personal Reflection on Ethics, Innovation, and Hope
 
 In the course of 25SP Technical Ethics U4 this fall, one theme stood out to me more than any other; the ethical implications of technological advancement, especially as they relate to the world our children are growing up in. As a parent and someone who has witnessed the rapid evolution of technology first-hand, I found myself returning again and again to one question; how do we protect access in a monetized internet while keeping our culture and humanism intact? The discussions in this class, particularly those surrounding the philosophies of Kant, utilitarianism, and transhumanism, helped me frame my thoughts not only as a student, but as a father trying to carve out a better future for my daughter.

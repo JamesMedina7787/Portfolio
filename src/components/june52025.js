@@ -2,12 +2,12 @@
       import React, { Component } from 'react';
 // import surf from './pictures/surf.jpg'
 const blogContent= {
-  flex:'3',
   border:"2px dotted black",
   padding: "10px",
-  margin: '30px',
-    width:'100%',
+  margin: '40px auto',
   fontSize: '1.38em',
+   width:'100%',
+   maxWidth:'900px',
   content:    `Social Media, Algorithms, and the Future of Visibility in Entertainment
 
 The entertainment industry has undergone massive transformation with the rise of social media platforms like TikTok, YouTube, and Instagram. These platforms have shifted power away from traditional gatekeepers and opened doors for creators of all backgrounds to share their voices. In theory, we now live in a world where anyone can become famous or successful with nothing more than a phone and an idea. But in reality, things aren’t that simple. Money, algorithms, and corporate interests play a much larger role than people might realize; in determining who gets seen, who gets ignored, and who gets rewarded. While these platforms have created new paths for visibility, the systems behind them have also raised major ethical concerns about fairness, equal opportunity, and the future of creativity. In this paper, I explore whether social media has increased exposure opportunities. I wonder if alone is no longer enough. Because platforms are structured to favor money, engagement, and brand alignment, access and success are increasingly reserved for those who can play the game—and afford to pay the toll.

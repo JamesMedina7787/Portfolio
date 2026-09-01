@@ -13,4 +13,4 @@ class AboutMe extends Component {
     }
   }
 
-export default AboutMe;
+export default React.memo(AboutMe);

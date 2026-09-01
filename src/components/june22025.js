@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 // import surf from './pictures/surf.jpg'
 const blogContent= {
-  flex:'3',
   border:"2px dotted black",
   padding: "10px",
-  margin: '30px',
+  margin: '40px auto',
   fontSize: '1.38em',
-  width:'100%',
+   width:'100%',
+   maxWidth:'900px',
   content:      `One ethical issue related to technology that stands out involves the McDonald’s app and how it impacts user experience and financial security. This issue transcends being merely a legal or regulatory concern and instead dives into the realm of ethics because it directly affects users’ trust and well-being. The primary ethical concern here is whether McDonald’s, as a large corporation, has a responsibility to ensure its app is thoroughly tested and user-friendly. An app that frequently causes confusion or errors could unintentionally lead users to lose money, especially when features like automatic donations to charity are not clearly communicated or easy to navigate.
 
 This raises ethical questions about informed consent and consumer protection. If users accidentally donate due to unclear prompts, the issue becomes less about legal obligation and more about respecting user autonomy and ensuring clarity. At stake are fundamental human values like fairness, trust, and personal agency. The public good is also implicated because when a widely-used app like McDonald’s functions poorly, it can inconvenience or financially disadvantage a large number of users.
